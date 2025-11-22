@@ -28,8 +28,9 @@ class Stack {
 
 
     print(){
-        console.log(this.items)
+        console.log(this.items.slice().reverse().join("→"));
     }
+    
 }
 
 const stack = new Stack();
@@ -45,4 +46,6 @@ stack.push(30);
 stack.print();
 console.log(stack.peek());
 console.log(stack.pop());
+stack.print();
+console.log(stack.peek());
 stack.print();
